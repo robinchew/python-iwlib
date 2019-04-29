@@ -42,6 +42,7 @@ def scan(interface):
 
     buf = ffi.new('char []', 1024)
 
+    print(dir(scan.b)) # Prints ['essid', 'essid_on', 'has_mode', 'mode'] without 'key_size'
     while scan != ffi.NULL:
         parsed_scan = {}
 

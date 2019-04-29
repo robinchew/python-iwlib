@@ -130,6 +130,7 @@ structs = """
         int mode;
         int essid_on;
         char essid[];
+        int key_size;
         ...;
     };
 
